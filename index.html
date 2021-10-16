@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fake 3D Effect with WebGL Shaders | Demo 1 | Codrops</title>
+	
+<style>
+#gl {
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.frame__content {
+	line-height: 0.8;
+	pointer-events: none;
+	margin-top: 13vh;
+	font-size: 40vw;
+	font-family: essonnes-display, serif;
+	mix-blend-mode: soft-light;
+	font-weight: normal;
+	text-align: center;
+	color: #c2ba8b;
+}
+
+</style>
+
+	</head>
+	<body class="demo-1">
+		<main>
+			<div class="frame">
+				<div 
+					id="gl" 
+					data-imageOriginal="img/canyon.jpg" 
+					data-imageDepth="img/canyon-map.jpg" 
+					 data-horizontalThreshold="35" 
+					data-verticalThreshold="15" 
+					>
+				</div>
+				<div class="frame__content">S</div>
+			</div>
+		</main>
+		<script src="js/app.js"></script>
+	</body>
+</html>
